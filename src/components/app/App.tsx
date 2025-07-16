@@ -1,14 +1,11 @@
-import Editor from "./editor/Editor";
-import Preview from "./preview/Preview";
+import "@shared/colors.css"
 import styles from "./App.module.css";
+import MarkdownEditor from "./markdown-editor/MarkdownEditor";
 
 const App = () => {
   return (
     <div class={styles.page}>
-      <div class={styles.container}>
-        <Editor />
-        <Preview />
-      </div>
+      <MarkdownEditor />
     </div>
   );
 };
