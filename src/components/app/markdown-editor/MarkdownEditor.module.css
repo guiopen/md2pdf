@@ -35,3 +35,7 @@
 .previewBox > :first-child {
 	margin-top: 0;
 }
+
+.previewBox > :last-child {
+	margin-bottom: 0;
+}
