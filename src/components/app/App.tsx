@@ -1,13 +1,9 @@
 import "@shared/colors.css"
-import styles from "./App.module.css"
+import "@shared/global.css"
 import MarkdownEditor from "./markdown-editor/MarkdownEditor"
 
 const App = () => {
-	return (
-		<div class={styles.page}>
-			<MarkdownEditor />
-		</div>
-	)
+	return <MarkdownEditor />
 }
 
 export default App

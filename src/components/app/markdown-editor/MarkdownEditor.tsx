@@ -1,5 +1,6 @@
 import { createSignal, type Component } from "solid-js"
 import { marked } from "marked"
+import content from "@shared/content.json"
 import styles from "./MarkdownEditor.module.css"
 
 type HtmlRef = HTMLElement | undefined
@@ -27,20 +28,31 @@ const MarkdownEditor: Component = () => {
 	}
 
 	return (
-		<div class={styles.container}>
-			<textarea // Editor
-				ref={editorRef}
-				class={styles.editorBox}
-				spellcheck={false}
-				onInput={e => setText(e.currentTarget.value)}
-				onScroll={() => syncScroll(editorRef, previewRef)}
-			/>
-			<div // Preview
-				ref={previewRef}
-				class={styles.previewBox}
-				innerHTML={marked.parse(getText(), { async: false })}
-				onScroll={() => syncScroll(previewRef, editorRef)}
-			/>
+		<div class={styles.page}>
+			<div class={styles.editorPreviewContainer}>
+				<textarea // Editor
+					ref={editorRef}
+					class={styles.editorBox}
+					placeholder={content.about}
+					spellcheck={false}
+					onInput={e => setText(e.currentTarget.value)}
+					onScroll={() => syncScroll(editorRef, previewRef)}
+				/>
+				<div // Preview
+					ref={previewRef}
+					class={styles.previewBox}
+					innerHTML={marked.parse(getText(), { async: false })}
+					onScroll={() => syncScroll(previewRef, editorRef)}
+				/>
+			</div>
+			<button
+				class={styles.printButton}
+				onClick={() => {
+					window.print()
+				}}
+			>
+				<p class={styles.printButtonText}>Save</p>
+			</button>
 		</div>
 	)
 }

@@ -1,5 +1,6 @@
 :root {
-    --app-background: rgb(28, 40, 52);
-    --soft-white: rgb(240, 240, 240);
-    --soft-black: rgb(15, 15, 15);
+    --main-background: rgb(28, 40, 52);
+    --box-background: rgb(240, 240, 240);
+    --text-color: rgb(15, 15, 15);
+    --button-color: rgb(63, 132, 247);
 }
