@@ -1,8 +1,10 @@
 ---
-import App from "@components/app/App"
+import "@shared/colors.css"
+import "@shared/global.css"
+import MarkdownEditor from "@components/MarkdownEditor"
 import Layout from "../layouts/Layout.astro"
 ---
 
 <Layout>
-	<App client:load />
+	<MarkdownEditor client:load />
 </Layout>
