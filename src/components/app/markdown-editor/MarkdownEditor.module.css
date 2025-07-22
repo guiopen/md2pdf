@@ -70,15 +70,20 @@
 	.page {
 		display: block;
 		background-color: white;
+		height: auto;
+		padding: 0;
 	}
-	.container {
+	.editorPreviewContainer {
 		display: block;
-		background-color: white;
+		height: auto;
 	}
 	.previewBox {
 		display: block;
 		background-color: white;
 		color: black;
+		overflow: visible;
+		height: auto;
+		flex: none;
 	}
 	.editorBox {
 		display: none;
