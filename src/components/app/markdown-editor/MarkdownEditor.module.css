@@ -26,6 +26,8 @@
 	padding: 8px;
 	resize: none;
 	border-width: 0px;
+	overflow-y: auto;
+	overflow-x: hidden;
 }
 
 .editorBox:focus {
@@ -40,7 +42,8 @@
 	font-size: 15px;
 	padding: 8px;
 	word-break: break-all;
-	overflow: auto;
+	overflow-y: auto;
+	overflow-x: hidden;
 }
 
 .previewBox > :first-child {
