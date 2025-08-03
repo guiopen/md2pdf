@@ -4,15 +4,16 @@
   "version": "0.0.1",
   "scripts": {
     "dev": "astro dev",
-    "build": "astro build",
+    "build": "astro check && astro build",
     "preview": "astro preview",
+    "check": "astro check",
     "astro": "astro"
   },
   "dependencies": {
-    "@astrojs/solid-js": "^5.1.0",
+    "@astrojs/check": "^0.9.4",
     "@playform/compress": "^0.2.0",
     "astro": "^5.10.0",
     "marked": "^16.0.0",
-    "solid-js": "^1.9.7"
+    "typescript": "^5.9.2"
   }
 }
