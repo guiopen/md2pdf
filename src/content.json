@@ -1,3 +1,3 @@
 {
-	"about": "Write your Markdown in the left pane and view the live preview on the right.\nClick the Save button to print or save your document as a PDF."
+	"about": "This is a free online tool to instantly convert your Markdown text to a PDF document.\n\nHow to Use\n\n1. Write or Paste: Add your Markdown content into this editor on the left.\n\n2. Live Preview: The preview pane on the right updates in real-time as you type. The editor and preview scroll in sync, so you'll never lose your place.\n\n3. Save as PDF: Click the \"Save\" button to open the print dialog. Choose \"Save as PDF\" as the destination to download your file.\n\nAll conversion from Markdown to PDF happens directly in your browser. Your text never leaves your computer.\n\nYou can verify the source code here: https://github.com/guiopen/md2pdf"
 }

@@ -2,6 +2,12 @@
 
 A straightforward tool for converting Markdown to PDF. Write your Markdown, see a live preview, and save it as a PDF.
 
+## Motivation
+
+This project started out of a simple need: an easy way to convert AI-generated responses from Markdown to PDF, whether on a computer or a smartphone. I created this website to streamline that process for my own workflow.
+
+It also served as an opportunity to learn the basics of web development. Although I had experience with JavaScript through React Native, I had never explored web development before.
+
 ## How to Use
 
 1.  Open the [md2pdf website](https://md2pdf.org/).
