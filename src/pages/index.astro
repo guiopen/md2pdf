@@ -29,6 +29,7 @@ import * as content from "@src/content.json"
 
 <script>
 	import {marked} from "marked"
+	import DOMPurify from 'dompurify';
 
 	const editor = document.getElementById("editor") as HTMLTextAreaElement
 	const preview = document.getElementById("preview") as HTMLDivElement
@@ -62,9 +63,9 @@ import * as content from "@src/content.json"
 
 	function updatePreview() {
 		if (editor && preview) {
-			preview.innerHTML = marked.parse(editor.value, {
+			preview.innerHTML = DOMPurify.sanitize(marked.parse(editor.value, {
 				async: false,
-			}) as string
+			})) as string
 		}
 	}
 
