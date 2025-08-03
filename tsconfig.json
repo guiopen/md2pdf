@@ -8,12 +8,14 @@
     "dist"
   ],
   "compilerOptions": {
-    "jsx": "preserve",
-    "jsxImportSource": "solid-js",
     "baseUrl": "src",
     "paths": {
-      "@components/*": ["components/*"],
-      "@shared/*": ["shared/*"]
+      "@src/*": [
+        "./*"
+      ],
+      "@components/*": [
+        "components/*"
+      ],
     }
   }
 }
