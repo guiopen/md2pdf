@@ -129,9 +129,11 @@ import * as content from "@src/content.json"
 		color: var(--text-color);
 		font-size: 15px;
 		padding: 8px;
-		word-break: break-all;
+		word-break: normal;
+		overflow-wrap: normal;
+		hyphens: none;
 		overflow-y: auto;
-		overflow-x: hidden;
+		overflow-x: auto;
 	}
 
 	.previewBox :global(> :first-child) {
